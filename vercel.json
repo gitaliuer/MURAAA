@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/hf-api/(.*)",
-      "destination": "https://router.huggingface.co/$1"
+      "source": "/hf-api/:path*",
+      "destination": "https://api-inference.huggingface.co/:path*"
     },
     {
-      "source": "/horde-api/(.*)",
-      "destination": "https://aihorde.net/api/$1"
+      "source": "/horde-api/:path*",
+      "destination": "https://aihorde.net/api/:path*"
     }
   ]
 }
