@@ -13,7 +13,7 @@ export const generateImageHF = async (prompt) => {
     }
 
     try {
-        const response = await fetch('/hf-api/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0', {
+        const response = await fetch('/hf-api/models/stabilityai/stable-diffusion-xl-base-1.0', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token.trim()}`,
